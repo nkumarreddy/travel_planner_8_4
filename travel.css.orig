@@ -158,11 +158,36 @@ address {
 
 
 
-
-
-
-
 <<<<<<< HEAD
+/**
+   * FOOTER
+   */
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-form {
+    grid-column: span 2;
+  }
+
+  .footer-bottom {
+    text-align: left;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+  }
+
+  .footer-bottom-list {
+    justify-content: flex-end;
+=======
+
+
+
+
 
 
 
@@ -343,6 +368,7 @@ address {
 
   .footer-form .btn {
     width: 100%;
+>>>>>>> plan3
   }
 
 }
@@ -352,10 +378,17 @@ address {
 
 
 /**
+<<<<<<< HEAD
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+=======
  * responsive for larger than 1200px screen
  */
 
 @media (min-width: 1200px) {
+>>>>>>> plan3
 
   /**
    * CUSTOM PROPERTY
@@ -364,10 +397,17 @@ address {
   :root {
 
     /**
+<<<<<<< HEAD
+     * typography
+     */
+
+    --fs-5: 15px;
+=======
      * spacing
      */
 
     --section-padding: 100px;
+>>>>>>> plan3
 
   }
 
@@ -378,10 +418,161 @@ address {
    */
 
   .container {
+<<<<<<< HEAD
+    max-width: 800px;
+  }
+
+  .section-text {
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .helpline-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .helpline-box .wrapper {
+    display: block;
+    color: var(--white);
+    font-size: var(--fs-6);
+  }
+
+  .social-list {
+    gap: 10px;
+  }
+
+
+
+  /**
+   * POPULAR
+   */
+
+  .popular-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .popular-list&gt;li:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .popular-card .card-content {
+    right: 20px;
+  }
+
+
+
+  /**
+   * PACKAGE
+   */
+
+  .package-list {
+    margin-bottom: 50px;
+  }
+
+  .package-list&gt;li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .package-card {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1fr;
+  }
+
+  .package-card .card-banner {
+    height: 100%;
+  }
+
+  .package-card .card-content {
+    padding: 40px;
+  }
+
+  .package-card .card-price {
+    display: grid;
+    place-content: center;
+  }
+
+  .package-card .card-price .wrapper {
+    margin-bottom: 15px;
+  }
+
+
+
+  /**
+   * GALLERY
+   */
+
+  .gallery {
+    padding-bottom: calc(var(--section-padding * 2));
+  }
+
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-image {
+    border-radius: var(--radius-25);
+  }
+
+
+
+  /**
+   * CTA
+   */
+
+  .cta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta-content {
+    width: calc(100% - 225px);
+  }
+
+  .cta .section-text {
+    margin-inline: 0;
+  }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .form-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-form .input-field {
+    margin-bottom: 0;
+  }
+
+  .footer-form .btn {
+    width: max-content;
+=======
     max-width: 1180px;
+>>>>>>> plan3
   }
 
 }
+
+<<<<<<< HEAD
 =======
 'use strict';
 
@@ -412,11 +603,10 @@ const navToggleEvent = function (elem) {
 
 
 
->>>>>>> plan4
 
 
 
 
 
-
+>>>>>>> plan3
 
