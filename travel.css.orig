@@ -151,14 +151,64 @@ address {
 
 
 
+<<<<<<< HEAD
+#go_to_page
+
+/*-----------------------------------*\
+ * #GO TO TOP
+\*-----------------------------------*/
 
 
+.go-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: hsl(74.77deg 57% 51%);
+
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.go-top.active {
+  opacity: 0.8;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.go-top:is(:hover, :focus) {
+  opacity: 1;
+}
+=======
+>>>>>>> plan2
 
 
 
 
 
 <<<<<<< HEAD
+/*-----------------------------------*\
+ * #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 580px screen
+ */
+
+@media (min-width: 580px) {
+=======
+
+
+
 /**
    * FOOTER
    */
@@ -183,7 +233,6 @@ address {
 
   .footer-bottom-list {
     justify-content: flex-end;
-=======
 
 
 
@@ -197,13 +246,36 @@ address {
  */
 
 @media (min-width: 992px) {
+>>>>>>> plan2
 
   /**
    * REUSED STYLE
    */
 
   .container {
+<<<<<<< HEAD
+    max-width: 580px;
+    margin-inline: auto;
+  }
+
+  .btn {
+    --fs-5: 16px;
+    --padding: 12px 30px;
+  }
+
+  section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
+    text-align: center;
+  }
+
+  .section-text {
+    margin-bottom: 40px;
+  }
+
+  .card-text {
+    --fs-5: 15px;
+=======
     max-width: 1050px;
+>>>>>>> plan2
   }
 
 
@@ -212,6 +284,31 @@ address {
    * HEADER
    */
 
+<<<<<<< HEAD
+  .header {
+    padding-top: 83px;
+  }
+
+  .helpline-box .icon-box {
+    padding: 14px;
+  }
+
+  .header-top .logo img {
+    max-width: unset;
+  }
+
+  .search-btn {
+    font-size: 30px;
+  }
+
+  .nav-open-btn {
+    font-size: 40px;
+  }
+
+  .header .btn {
+    --fs-5: 14px;
+    --padding: 6px 20px;
+=======
   .header.active .header-top {
     position: unset;
     background: unset;
@@ -285,6 +382,7 @@ address {
 
   .overlay {
     display: none;
+>>>>>>> plan2
   }
 
 
@@ -293,8 +391,22 @@ address {
    * HERO
    */
 
+<<<<<<< HEAD
+  .hero {
+    min-height: 800px;
+    padding-top: 85px;
+  }
+
+  .hero-text {
+    --fs-5: 15px;
+  }
+
+  .btn-group {
+    gap: 20px;
+=======
   .hero .container {
     max-width: 740px;
+>>>>>>> plan2
   }
 
 
@@ -304,6 +416,25 @@ address {
    */
 
   .tour-search-form {
+<<<<<<< HEAD
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .tour-search-form .input-wrapper {
+    margin-bottom: 0;
+  }
+
+  .tour-search-form .input-field {
+    padding: 16px 20px;
+  }
+
+  .tour-search .btn {
+    grid-column: span 2;
+    margin-top: 20px;
+=======
     grid-template-columns: repeat(5, 1fr);
   }
 
@@ -311,6 +442,7 @@ address {
     --padding: 15px;
     grid-column: unset;
     margin-top: 0;
+>>>>>>> plan2
   }
 
 
@@ -319,12 +451,19 @@ address {
    * POPULAR
    */
 
+<<<<<<< HEAD
+  .popular-card .card-content {
+    right: auto;
+=======
   .popular-list {
     grid-template-columns: repeat(3, 1fr);
+>>>>>>> plan2
   }
 
 
 
+<<<<<<< HEAD
+=======
   /**
    * PACKAGE
    */
@@ -368,7 +507,7 @@ address {
 
   .footer-form .btn {
     width: 100%;
->>>>>>> plan3
+
   }
 
 }
@@ -378,17 +517,17 @@ address {
 
 
 /**
-<<<<<<< HEAD
+
  * responsive for larger than 768px screen
  */
 
 @media (min-width: 768px) {
-=======
+
  * responsive for larger than 1200px screen
  */
 
 @media (min-width: 1200px) {
->>>>>>> plan3
+
 
   /**
    * CUSTOM PROPERTY
@@ -397,17 +536,17 @@ address {
   :root {
 
     /**
-<<<<<<< HEAD
+
      * typography
      */
 
     --fs-5: 15px;
-=======
+
      * spacing
      */
 
     --section-padding: 100px;
->>>>>>> plan3
+
 
   }
 
@@ -418,7 +557,7 @@ address {
    */
 
   .container {
-<<<<<<< HEAD
+
     max-width: 800px;
   }
 
@@ -565,15 +704,14 @@ address {
 
   .footer-form .btn {
     width: max-content;
-=======
+
     max-width: 1180px;
->>>>>>> plan3
+
   }
 
 }
 
-<<<<<<< HEAD
-=======
+
 'use strict';
 
 /**
@@ -605,8 +743,8 @@ const navToggleEvent = function (elem) {
 
 
 
+>>>>>>> plan2
 
 
 
->>>>>>> plan3
 
